@@ -105,3 +105,9 @@
   transform-origin: top left;
   width: 111.11%;
 }
+
+@layer base {
+  body {
+    @apply px-4 md:px-8 lg:px-16;
+  }
+}

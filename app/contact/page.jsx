@@ -4,6 +4,8 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 
+import { useState } from "react";
+
 import {
   Select,
   SelectContent,
@@ -37,6 +39,33 @@ const info = [
 import { motion } from "framer-motion";
 
 const Contact = () => {
+  const [service, setService] = useState("");
+  const [message, setMessage] = useState("");
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+
+  // form submission
+  const handleSendMessage = (e) => {
+    e.preventDefault();
+
+    const subject = service ? `Inquiry about ${service}` : "General Inquiry";
+    const body = `
+      Name: ${firstName} ${lastName}
+      Email: ${email}
+      Phone: ${phone}
+      Service: ${service || "Not selected"}
+      Message: ${message || "No message provided."}
+    `;
+
+    const gmailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=shadipto.pranto@gmail.com&su=${encodeURIComponent(
+      subject
+    )}&body=${encodeURIComponent(body)}`;
+
+    window.open(gmailLink, "_blank");
+  };
+
   return (
     <motion.section
       initial={{ opacity: 0 }}
@@ -51,20 +80,43 @@ const Contact = () => {
           {/* form */}
 
           <div className="xl:w-[54%] order-2 xl:order-none">
-            <form className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl">
+            <form
+              className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl"
+              onSubmit={handleSendMessage}
+            >
               <h3 className="text-4xl text-accent">Let's work together</h3>
               <p className="text-white/60">Connect with me.</p>
-              {/* imput */}
+              {/* input */}
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <Input type="firstname" placeholder="Firstname" />
-                <Input type="lastname" placeholder="Lastname" />
-                <Input type="email" placeholder="Email address" />
-                <Input type="phone" placeholder="Phone number" />
+                <Input
+                  type="firstname"
+                  placeholder="Firstname"
+                  value={firstName}
+                  onChange={(e) => setFirstName(e.target.value)}
+                />
+                <Input
+                  type="lastname"
+                  placeholder="Lastname"
+                  value={lastName}
+                  onChange={(e) => setLastName(e.target.value)}
+                />
+                <Input
+                  type="email"
+                  placeholder="Email address"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                />
+                <Input
+                  type="phone"
+                  placeholder="Phone number"
+                  value={phone}
+                  onChange={(e) => setPhone(e.target.value)}
+                />
               </div>
               {/* select */}
 
-              <Select>
+              <Select value={service} onValueChange={setService}>
                 <SelectTrigger className="w-full">
                   <SelectValue placeholder="Select a service" />
                 </SelectTrigger>
@@ -84,6 +136,8 @@ const Contact = () => {
               <Textarea
                 className="h-[200px]"
                 placeholder="Type your message here."
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
               />
               {/* btn */}
 
