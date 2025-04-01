@@ -9,7 +9,7 @@ import { SiTailwindcss, SiNextdotjs, SiMysql } from "react-icons/si";
 const about = {
   title: "About me",
   description:
-    "I excel at crafting elegant digital experiences and I am proficient in various programming languages and technologies.",
+    "I'm Shadipto Pranto, currently in my 5th semester at AIUB, pursuing a degree in Computer Science and Engineering (CSE). I'm passionate about software development and have experience working with languages like C++, Java, and SQL. I also specialize in web development, using tools such as React, Next.js, and Tailwind CSS. I'm an active participant in competitive programming, which helps me sharpen my problem-solving skills. I'm always eager to learn new technologies and stay up-to-date with the latest trends in the field.",
   info: [
     {
       fieldname: "Name",
