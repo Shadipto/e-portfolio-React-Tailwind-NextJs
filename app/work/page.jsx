@@ -55,7 +55,7 @@ const projects = [
     title: "project 3",
     description:
       "A database-driven project using XAMPP and MySQL for efficient data management, featuring seamless CRUD operations and a user-friendly interface for streamlined interactions.",
-    stack: [{ name: "php" }, { name: "Xaamp" }, { name: "My Sql" }],
+    stack: [{ name: "php" }, { name: "Xampp" }, { name: "My Sql" }],
     image: "/assets/work/ddd.png",
     live: "",
     github: "",
