@@ -98,7 +98,9 @@ const Work = () => {
               </h2>
               {/* description */}
 
-              <p className="text-white/60">{project.description}</p>
+              <p className="text-white/60 text-justify">
+                {project.description}
+              </p>
               {/* stack */}
 
               <ul className="flex gap-4">
