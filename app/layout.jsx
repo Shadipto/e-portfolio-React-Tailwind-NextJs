@@ -7,6 +7,7 @@ import "./globals.css";
 
 // insites data (vercel)
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata = {
   title: "Create Next App",
@@ -21,6 +22,7 @@ export default function RootLayout({ children }) {
         <StairTransition />
         <PageTransition>{children}</PageTransition>
         <SpeedInsights />
+        <Analytics />
       </body>
     </html>
   );
