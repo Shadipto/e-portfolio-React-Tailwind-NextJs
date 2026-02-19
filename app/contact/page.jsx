@@ -32,7 +32,7 @@ const info = [
   {
     icon: <FaMapMarkerAlt />,
     title: "Address",
-    description: "Wari, Dhaka-1100, Bangladesh",
+    description: "Kuril, Dhaka-1229, Bangladesh",
   },
 ];
 
@@ -60,7 +60,7 @@ const Contact = () => {
     `;
 
     const gmailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=shadipto.pranto@gmail.com&su=${encodeURIComponent(
-      subject
+      subject,
     )}&body=${encodeURIComponent(body)}`;
 
     window.open(gmailLink, "_blank");

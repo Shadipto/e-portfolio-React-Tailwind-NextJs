@@ -2,14 +2,14 @@
 
 import { FaJs, FaReact, FaNodeJs, FaJava } from "react-icons/fa";
 
-import { TbBrandCpp } from "react-icons/tb";
+import { TbBrandCpp, TbBrandCSharp, TbBrandPython } from "react-icons/tb";
 
 import { SiTailwindcss, SiNextdotjs, SiMysql } from "react-icons/si";
 
 const about = {
   title: "About me",
   description:
-    "I'm Shadipto Pranto, currently in my 5th semester at AIUB, pursuing a degree in Computer Science and Engineering (CSE). I'm passionate about software development and have experience working with languages like C++, Java, and SQL. I also specialize in web development, using tools such as React, Next.js, and Tailwind CSS. I'm an active participant in competitive programming, which helps me sharpen my problem-solving skills. I'm always eager to learn new technologies and stay up-to-date with the latest trends in the field.",
+    "I’m Shadipto Pranto, currently in my 8th semester at American International University-Bangladesh, pursuing a degree in Computer Science and Engineering (CSE). I’m passionate about software engineering and building scalable, efficient applications. I have hands-on experience in C++, Java, C#, Python, and SQL, working with the .NET Framework for structured application development and using Jupyter Notebook for data analysis, problem-solving, and experimentation. Alongside backend development, I specialize in modern web technologies such as React, Next.js, and Tailwind CSS. As an active competitive programmer, I continuously refine my analytical thinking and algorithmic problem-solving skills. I’m always eager to explore emerging technologies and stay aligned with industry best practices.",
   info: [
     {
       fieldname: "Name",
@@ -21,7 +21,7 @@ const about = {
     },
     {
       fieldname: "Experience",
-      fieldvalue: "1+ Year",
+      fieldvalue: "2+ Year",
     },
     {
       fieldname: "Email",
@@ -47,8 +47,23 @@ const experience = {
   icon: "/assets/resume/badge.svg",
   title: "My experience",
   description:
-    "I'm a web and software developer with experience in C++, Java, UI/UX, and modern web technologies, building efficient and scalable solutions.",
+    "I am a software and web developer with practical experience in C++, Java, C#, Python, and SQL. I have developed applications using the .NET Framework, built responsive web interfaces using modern frontend technologies, and performed analytical and computational tasks using Python and Jupyter Notebook. Through academic projects, competitive programming, and hands-on development, I have strengthened my ability to design efficient, scalable, and real-world software solutions.",
   items: [
+    {
+      company: "Freelance",
+      position: "Python Developer",
+      duration: "From 2025",
+    },
+    {
+      company: "Freelance",
+      position: "DOTNET Developer",
+      duration: "From 2025",
+    },
+    {
+      company: "Freelance",
+      position: "Software Engineer",
+      duration: "From 2025",
+    },
     {
       company: "Freelance",
       position: "Web Developer",
@@ -87,7 +102,7 @@ const education = {
   icon: "/assets/resume/cap.svg",
   title: "My education",
   description:
-    "I'm currently in my 2nd year of a Computer Science and Engineering degree, building my skills in software development and problem-solving.",
+    "I am currently in my final year (8th semester) of a Bachelor’s degree in Computer Science and Engineering at AIUB, where I have built strong foundations in algorithms, data structures, software design and engineering, database systems, computer graphics, networking, and computational statistics.",
   items: [
     {
       institution: "American International University-Bangladesh",
@@ -116,11 +131,19 @@ const education = {
 const skills = {
   title: "My skills",
   description:
-    "I specialize in web development, UI/UX design, and software engineering. I have experience in C++, Java, and other programming languages, and I'm continuously learning new technologies to stay updated and deliver optimized, scalable solutions.",
+    "I specialize in software engineering, backend development with C# and .NET Framework, and modern web development. My technical stack includes C++, Java, C#, Python, SQL, React, Next.js, and Tailwind CSS. I also work with Jupyter Notebook for data analysis, algorithm experimentation, and computational tasks. Additionally, I have experience in UML-based system design, database management, and building structured, object-oriented applications. I focus on writing clean, maintainable code and designing optimized, scalable solutions.",
   skilllist: [
     {
       icon: <TbBrandCpp />,
       name: "c++",
+    },
+    {
+      icon: <TbBrandCSharp />,
+      name: "c#",
+    },
+    {
+      icon: <TbBrandPython />,
+      name: "python",
     },
     {
       icon: <FaJava />,

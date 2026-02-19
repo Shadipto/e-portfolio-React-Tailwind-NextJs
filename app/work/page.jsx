@@ -35,7 +35,7 @@ const projects = [
       { name: "JavaScript" },
     ],
     image: "/assets/work/sss.png",
-    live: "",
+    live: "https://shadipto-portfolio.vercel.app/",
     github: "https://github.com/Shadipto/e-portfolio",
   },
   {
@@ -46,7 +46,7 @@ const projects = [
       "A user-friendly GUI-based library management system for efficient book tracking, user management, and seamless borrowing and returning, enhancing library operations.",
     stack: [{ name: "Java" }, { name: "Swing" }],
     image: "/assets/work/LMS3.png",
-    live: "",
+    live: "https://github.com/Shadipto/Library-Management-System",
     github: "https://github.com/Shadipto/Library-Management-System",
   },
   {
@@ -59,6 +59,17 @@ const projects = [
     image: "/assets/work/ddd.png",
     live: "",
     github: "",
+  },
+  {
+    num: "04",
+    category: "Smart POS System",
+    title: "project 4",
+    description:
+      "A smart POS system built with C# and .NET, featuring a user-friendly interface for efficient sales management, inventory tracking, and seamless transaction processing.  Designed to enhance retail operations and provide a seamless shopping experience.",
+    stack: [{ name: "C#" }, { name: ".NET" }, { name: "Microsoft SQL" }],
+    image: "/assets/work/siliconSource.png",
+    live: "https://github.com/Shadipto/OOP2-Project-Silicon-Source",
+    github: "https://github.com/Shadipto/OOP2-Project-Silicon-Source",
   },
 ];
 

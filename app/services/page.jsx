@@ -33,6 +33,20 @@ const services = [
       "I develop efficient and scalable Java solutions, from backend systems to enterprise applications. With a strong focus on performance, reliability, and maintainability, I build robust software tailored to diverse business and development needs.",
     href: "",
   },
+  {
+    num: "05",
+    title: "Python Development",
+    description:
+      "I develop efficient and scalable Python solutions, from web applications to data analysis. With a strong focus on performance, reliability, and maintainability, I build robust software tailored to diverse business and development needs.",
+    href: "",
+  },
+  {
+    num: "06",
+    title: "Windows Form Application Development",
+    description:
+      "I develop efficient and user-friendly Windows Form applications(dotnet), from desktop software to business solutions. With a strong focus on performance, reliability, and maintainability, I build robust applications tailored to diverse business and development needs.",
+    href: "",
+  },
 ];
 
 const Services = () => {
